@@ -1,0 +1,26 @@
+.navbar{
+    background-color: rgb(247, 247, 223) !important;
+    height: auto;
+    width: auto;
+}
+.nav-logo{
+    /* border-radius: 60px 25px 60px 25px; */
+    /* background-color: green; */
+    height: 90px;
+    width: 140px;
+}
+.nav-item{
+    font-size: 1rem;
+}
+.nav-link:hover{
+    text-decoration: underline;
+    color:rgb(8, 170, 8) !important;
+    transition: all 0.5s ease-in-out;
+    font-size: 1.2rem;
+}
+@media (max-width: 991px) {
+    .nav-item {
+        text-align: end;
+        padding:10px 0;
+    }
+}

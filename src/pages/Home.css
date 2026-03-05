@@ -135,7 +135,7 @@
 .btn-dark:hover {
     transform: translateY(-5px) scale(1.05);
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.2);
-    background-color: #1a1a1a !important;
+    background-color: #2e7d32 !important;
 }
 
 .btn-success:hover {
@@ -157,7 +157,7 @@
 
 /* Text Animation */
 h1 {
-    background: linear-gradient(45deg, #333, #28a745);
+    background: linear-gradient(45deg, #2e7d32, #c7a400);
     background-size: 200% 200%;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -184,7 +184,15 @@ p {
 
 p:hover {
     transform: translateX(5px);
-    color: #333 !important;
+    color: #2e7d32 !important;
+}
+
+.hero-subtext {
+    color: #2e7d32 !important;
+}
+
+.home-accent-text {
+    color: #c7a400 !important;
 }
 
 .shadow-custom {

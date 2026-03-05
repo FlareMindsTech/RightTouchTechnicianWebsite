@@ -12,7 +12,7 @@ const Navbar = () => {
         {/* Logo */}
         <Link className="navbar-brand d-flex align-items-center" to="/">
           <img 
-            src="/logo.png"
+            src="/RightTouchLogo.ico"
             alt="Right Touch Logo" 
             className="d-inline-block nav-logo align-top me-2"
           />

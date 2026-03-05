@@ -1,13 +1,12 @@
 .navbar{
-    background-color: rgb(247, 247, 223) !important;
-    height: auto;
+    background-color: rgb(255, 255, 252) !important;
+    /* height: 120px; */
+    min-height: 80px;
     width: auto;
 }
-.nav-logo{
-    /* border-radius: 60px 25px 60px 25px; */
-    /* background-color: green; */
-    height: 90px;
-    width: 140px;
+.nav-logo {
+    height: 65px; 
+    width: 105px;
 }
 .nav-item{
     font-size: 1rem;

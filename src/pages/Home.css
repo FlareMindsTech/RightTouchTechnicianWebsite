@@ -181,10 +181,12 @@ p {
     transition: all 0.3s ease;
     position: relative;
 }
-
+.p{
+   color: #c7a400 !important;
+}
 p:hover {
     transform: translateX(5px);
-    color: #2e7d32 !important;
+    color: #c7a400 !important;
 }
 
 .hero-subtext {
@@ -192,7 +194,7 @@ p:hover {
 }
 
 .home-accent-text {
-    color: #c7a400 !important;
+    color: #2e7d32 !important;
 }
 
 .shadow-custom {

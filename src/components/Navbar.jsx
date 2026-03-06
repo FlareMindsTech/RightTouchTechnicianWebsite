@@ -48,7 +48,8 @@ const Navbar = () => {
             <li className="nav-item px-lg-3">
               <Link 
                 className="nav-link text-secondary fw-bold" 
-                to="/"
+                to="https://righttouchuserwebsite.onrender.com/services"
+                target='_blank'
                 onClick={() => setIsNavCollapsed(true)} 
               >
                 Book a service

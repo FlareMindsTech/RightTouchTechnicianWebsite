@@ -20,14 +20,34 @@
 .about-page .about-vision-box {
 	background-color: var(--brand-yellow-soft);
 }
+.about-p{
+	font-size: 1rem;
+}
 
 .about-page .quality-card {
-	background-color: var(--brand-yellow-soft);
+	background-color: #ffffff;
+	min-height: 250px;
+	padding: 1.75rem !important;
+	border-radius: 1rem;
 	transition: background-color 0.35s ease, transform 0.35s ease, box-shadow 0.35s ease;
 }
 
+.about-page .quality-card .display-5 {
+	font-size: 3rem;
+	line-height: 1;
+}
+
+.about-page .quality-card h5 {
+	font-size: 1.35rem;
+}
+
+.about-page .quality-card p {
+	font-size: 1rem;
+	line-height: 1.6;
+}
+
 .about-page .quality-card:hover {
-	background-color: var(--brand-green-soft);
+	background-color: #ffffff;
 	transform: translateY(-6px);
 	box-shadow: 0 14px 24px rgba(46, 125, 50, 0.16) !important;
 }

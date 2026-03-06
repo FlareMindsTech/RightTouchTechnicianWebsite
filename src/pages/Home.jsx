@@ -29,7 +29,7 @@ const HeroContainer = styled.section`
   }
 `;
 const Home = () => {
-  const playStoreLink = "https://play.google.com/store/apps/details?id=com.righttouch.app";
+  const playStoreLink = "https://play.google.com/store/apps/details?id=com.righttouchpartner.app&pcampaignid=web_share";
   useScrollReveal();
 
   return (

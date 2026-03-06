@@ -1,4 +1,7 @@
 /* Keyframe Animations */
+body{
+    font-family: 'Times New Roman', Times, serif;
+}
 @keyframes fadeInLeft {
     0% {
         opacity: 0;

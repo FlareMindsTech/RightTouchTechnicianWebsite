@@ -2,14 +2,14 @@ import useScrollReveal from "../hooks/useScrollReveal";
 import "./About.css";
 
 const About = () => {
-  const playStoreLink = "https://play.google.com/store/apps/details?id=com.righttouch.app";
+  const playStoreLink = "https://play.google.com/store/apps/details?id=com.righttouchpartner.app&pcampaignid=web_share";
   useScrollReveal();
 
   return (
     <div className="container my-5 about-page">
       <div className="text-center mb-5 scroll-reveal reveal-up">
         <h1 className="display-4 fw-bold text-success">About Right Touch</h1>
-        <p className="lead about-secondary-text">Connecting skilled professionals with homes that need a "Right Touch."</p>
+        <p className="lead about-secondary-text about-p py-2 fw-bold">Connecting skilled professionals with homes that need a "Right Touch."</p>
       </div>
 
       <div className="row align-items-center mb-5 scroll-reveal reveal-up reveal-delay-1">
@@ -32,10 +32,10 @@ const About = () => {
         <h2 className="fw-bold text-success">How We Ensure Quality</h2>
       </div>
 
-      <div className="row text-center g-4 mb-5 scroll-stagger">
+      <div className="row text-center g-4 mb-5 scroll-stagger fw-bold">
         {["KYC Verification", "3-Day Training", "Live Bookings"].map((step, index) => (
           <div className="col-md-4 scroll-reveal reveal-up" key={index}>
-            <div className="card quality-card h-100 border-0 shadow-sm p-3">
+            <div className="card quality-card h-100 border-0 shadow-sm p-4">
               <div className="display-5 text-success mb-2">0{index + 1}</div>
               <h5 className="fw-bold about-title">{step}</h5>
               <p className="small about-secondary-text">Detailed process to ensure only the best technicians serve our customers.</p>

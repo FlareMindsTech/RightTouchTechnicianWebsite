@@ -12,7 +12,7 @@ const Footer = () => {
           {/* Column 1: Brand */}
           <div className="col-md-3 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 className="text-uppercase mb-4 font-weight-bold text-success">Right Touch</h5>
-            <p className="p">Professional repair services at your doorstep.</p>
+            <p className="p fw-bold">Professional repair services at your doorstep.</p>
           </div>
 
           {/* Column 2: Roles */}

@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import styled from "styled-components";
-import RightSide from "../assets/right-side-.png";
+import RightSide from "../assets/right-side-new.png";
 import "./Home.css";
 import useScrollReveal from "../hooks/useScrollReveal";
 

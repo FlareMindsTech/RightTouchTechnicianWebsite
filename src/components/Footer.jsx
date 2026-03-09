@@ -15,9 +15,9 @@ const Footer = () => {
         extendedTimeOut: 0,
         positionClass: "toast-top-center",
       };
-      window.toastr.info("App will launch soon");
+      window.toastr.info("⚠ User App will launch soon");
     } else {
-      window.alert("App will launch soon");
+      window.alert("⚠ User App will launch soon");
     }
   };
 

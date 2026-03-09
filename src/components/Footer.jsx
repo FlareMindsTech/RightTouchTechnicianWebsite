@@ -35,7 +35,7 @@ const Footer = () => {
           {/* Column 2: Roles */}
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 className="text-uppercase home-accent-text mb-4 font-weight-bold">Join Us</h5>
-            <p><Link to="https://play.google.com/store/apps/details?id=com.righttouchpartner.app&pcampaignid=web_share" className="text-success fw-bold text-decoration-underline">Technician App</Link></p>
+            <p><Link target="_blank" to="https://play.google.com/store/apps/details?id=com.righttouchpartner.app&pcampaignid=web_share" className="text-success fw-bold text-decoration-underline">Technician App</Link></p>
             <p><Link to="#" onClick={handleUserAppClick} className="text-success fw-bold text-decoration-underline">User App</Link></p>
           </div>
 

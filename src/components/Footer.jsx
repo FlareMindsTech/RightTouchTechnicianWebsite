@@ -4,6 +4,23 @@ const Footer = () => {
   // Get the current year
   const currentYear = new Date().getFullYear();
 
+  const handleUserAppClick = (event) => {
+    event.preventDefault();
+
+    if (window.toastr) {
+      window.toastr.options = {
+        closeButton: true,
+        progressBar: true,
+        timeOut: 4000,
+        extendedTimeOut: 0,
+        positionClass: "toast-top-center",
+      };
+      window.toastr.info("App will launch soon");
+    } else {
+      window.alert("App will launch soon");
+    }
+  };
+
   return (
     <footer className="pt-5 pb-4 mt-5">
       <div className="container text-center text-md-left">
@@ -18,8 +35,8 @@ const Footer = () => {
           {/* Column 2: Roles */}
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 className="text-uppercase home-accent-text mb-4 font-weight-bold">Join Us</h5>
-            <p><Link to="https://play.google.com/store/apps/details?id=com.righttouch.app" className="text-success fw-bold text-decoration-underline">Technician App</Link></p>
-            <p><Link to="https://play.google.com/store/apps/details?id=com.righttouch.app" className="text-success fw-bold text-decoration-underline">User App</Link></p>
+            <p><Link to="https://play.google.com/store/apps/details?id=com.righttouchpartner.app&pcampaignid=web_share" className="text-success fw-bold text-decoration-underline">Technician App</Link></p>
+            <p><Link to="#" onClick={handleUserAppClick} className="text-success fw-bold text-decoration-underline">User App</Link></p>
           </div>
 
           {/* Column 3: Contact */}

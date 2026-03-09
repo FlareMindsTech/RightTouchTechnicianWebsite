@@ -5,8 +5,8 @@
     width: auto;
 }
 .nav-logo {
-    height: 65px;
-    width: 145px;
+    height: 85px;
+    width: 125px;
 }
 .nav-item{
     font-size: 1rem;
@@ -16,6 +16,25 @@
     color:rgb(8, 170, 8) !important;
     transition: all 0.5s ease-in-out;
     font-size: 1.2rem;
+}
+@media (min-width: 992px) {
+    .navbar .container {
+        max-width: 100%;
+        padding-left: 0;
+        padding-right: 0;
+    }
+
+    .navbar-brand {
+        margin-left: 0;
+        margin-right: auto;
+        padding-left: 12px;
+    }
+
+    .navbar-collapse {
+        display: flex !important;
+        justify-content: flex-end;
+        padding-right: 12px;
+    }
 }
 @media (max-width: 991px) {
     .nav-item {

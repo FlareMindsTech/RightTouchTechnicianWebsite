@@ -38,7 +38,7 @@ const About = () => {
           <p className="about-body-text mb-3">We provide trusted technicians with exclusive opportunities to grow their skills and earnings.</p>
           <ul className="list-unstyled">
             <li className="mb-3"><span className="text-success fw-bold">✓</span> <span className="about-body-text ms-2">Consistent bookings from verified customers</span></li>
-            <li className="mb-3"><span className="text-success fw-bold">✓</span> <span className="about-body-text ms-2">Professional training and certification support</span></li>
+            <li className="mb-3"><span className="text-success fw-bold">✓</span> <span className="about-body-text ms-2">Professional training and support</span></li>
             <li className="mb-3"><span className="text-success fw-bold">✓</span> <span className="about-body-text ms-2">Competitive earning potential</span></li>
             <li><span className="text-success fw-bold">✓</span> <span className="about-body-text ms-2">24/7 customer support</span></li>
           </ul>

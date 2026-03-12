@@ -1,4 +1,5 @@
 import useScrollReveal from "../hooks/useScrollReveal";
+import techPartImg from "../assets/tech-part.png";
 import "./About.css";
 
 const About = () => {
@@ -23,6 +24,24 @@ const About = () => {
             <h4 className="fw-bold about-title">Our Vision</h4>
             <p className="mb-0 about-body-text">To empower thousands of service professionals with consistent work and professional training.</p>
           </div>
+        </div>
+      </div>
+
+      <div className="row align-items-center mb-5 scroll-reveal reveal-up reveal-delay-1">
+        <div className="col-md-6 d-flex justify-content-center">
+          <div className="tech-part-showcase">
+            <img src={techPartImg} alt="Right Touch Technician Partner" className="tech-part-img" />
+          </div>
+        </div>
+        <div className="col-md-6">
+          <h2 className="fw-bold mb-3 about-title">Why Join Our Platform?</h2>
+          <p className="about-body-text mb-3">We provide trusted technicians with exclusive opportunities to grow their skills and earnings.</p>
+          <ul className="list-unstyled">
+            <li className="mb-3"><span className="text-success fw-bold">✓</span> <span className="about-body-text ms-2">Consistent bookings from verified customers</span></li>
+            <li className="mb-3"><span className="text-success fw-bold">✓</span> <span className="about-body-text ms-2">Professional training and certification support</span></li>
+            <li className="mb-3"><span className="text-success fw-bold">✓</span> <span className="about-body-text ms-2">Competitive earning potential</span></li>
+            <li><span className="text-success fw-bold">✓</span> <span className="about-body-text ms-2">24/7 customer support</span></li>
+          </ul>
         </div>
       </div>
 

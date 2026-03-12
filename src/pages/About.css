@@ -55,3 +55,53 @@
 .about-page .about-cta-box {
 	background-color: var(--brand-yellow-soft);
 }
+
+/* Tech Part Image Showcase */
+.tech-part-showcase {
+	position: relative;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 2rem;
+	background: linear-gradient(135deg, rgba(46, 125, 50, 0.1) 0%, rgba(199, 164, 0, 0.1) 100%);
+	border-radius: 2rem;
+	box-shadow: 0 10px 40px rgba(46, 125, 50, 0.15);
+	transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+	overflow: hidden;
+}
+
+.tech-part-showcase::before {
+	content: '';
+	position: absolute;
+	top: -50%;
+	right: -50%;
+	width: 200%;
+	height: 200%;
+	background: radial-gradient(circle, rgba(199, 164, 0, 0.2) 0%, transparent 70%);
+	pointer-events: none;
+}
+
+.tech-part-showcase:hover {
+	transform: translateY(-8px);
+	box-shadow: 0 20px 50px rgba(46, 125, 50, 0.25);
+}
+
+.tech-part-img {
+	max-width: 100%;
+	height: auto;
+	display: block;
+	position: relative;
+	z-index: 1;
+	transition: transform 0.4s ease-out;
+	filter: drop-shadow(0 4px 12px rgba(46, 125, 50, 0.2));
+}
+
+.tech-part-showcase:hover .tech-part-img {
+	transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+	.tech-part-showcase {
+		margin-bottom: 2rem;
+	}
+}

@@ -42,6 +42,7 @@ const Footer = () => {
           {/* Column 3: Contact */}
           <div className="col-md-4 col-lg-3 col-xl-3 mx-auto mt-3">
             <h5 className="text-uppercase home-accent-text mb-4 font-weight-bold">Contact</h5>
+            <p><Link to="/help" className="home-accent-text">Help Center</Link></p>
             <p className="home-accent-text"><i className="fas fa-home mr-3"></i> Chennai, TN 600001, IN</p>
             <p className="home-accent-text"><i className="fas fa-envelope mr-3"></i> support@righttouch.com</p>
           </div>

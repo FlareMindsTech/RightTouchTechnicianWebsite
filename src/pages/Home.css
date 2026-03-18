@@ -211,6 +211,99 @@ p:hover {
     box-shadow: 0 20px 30px rgba(0, 0, 0, 0.2);
 }
 
+.user-launch-card {
+    position: relative;
+    border-radius: 38px 14px 46px 18px / 18px 42px 16px 36px;
+    padding: 2.2rem 1.2rem;
+    background: linear-gradient(135deg, #fff9db 0%, #f3ffe9 50%, #e8f5e9 100%);
+    border: 1px solid rgba(46, 125, 50, 0.2);
+    box-shadow: 0 16px 30px rgba(26, 67, 30, 0.12);
+    overflow: hidden;
+}
+
+.user-launch-card::before {
+    content: "";
+    position: absolute;
+    width: 220px;
+    height: 220px;
+    background: radial-gradient(circle, rgba(255, 214, 102, 0.35) 0%, rgba(255, 214, 102, 0) 70%);
+    top: -80px;
+    right: -30px;
+    pointer-events: none;
+}
+
+.launch-tag {
+    display: inline-block;
+    padding: 0.35rem 0.9rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #1b5e20;
+    background: rgba(255, 255, 255, 0.7);
+}
+
+.launch-title {
+    color: #1b5e20;
+    font-weight: 800;
+}
+
+.launch-subtitle {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+    color: #2e7d32;
+    font-size: 1.05rem;
+    line-height: 1.55;
+}
+
+.launch-explore-btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.55rem;
+    min-width: 220px;
+    padding: 0.9rem 1.8rem;
+    border-radius: 999px;
+    text-decoration: none;
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: #ffffff;
+    background: linear-gradient(90deg, #2e7d32 0%, #558b2f 45%, #c7a400 100%);
+    box-shadow: 0 12px 25px rgba(46, 125, 50, 0.35);
+    transition: transform 0.25s ease, box-shadow 0.25s ease, filter 0.25s ease;
+}
+
+.launch-explore-btn:hover,
+.launch-explore-btn:focus {
+    color: #ffffff;
+    transform: translateY(-4px) scale(1.02);
+    box-shadow: 0 16px 32px rgba(46, 125, 50, 0.42);
+    filter: saturate(1.1);
+}
+
+@media (max-width: 767px) {
+    .user-launch-card {
+        padding: 1.7rem 1rem;
+        border-radius: 28px 10px 34px 12px / 12px 30px 10px 26px;
+    }
+
+    .launch-title {
+        font-size: 1.45rem;
+    }
+
+    .launch-subtitle {
+        font-size: 0.95rem;
+    }
+
+    .launch-explore-btn {
+        width: 100%;
+        max-width: 320px;
+        font-size: 1rem;
+    }
+}
+
 /*  Smooth Loading Animation */
 .container {
     animation: fadeIn 1s ease-in;

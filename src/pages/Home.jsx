@@ -30,6 +30,20 @@ const HeroContainer = styled.section`
 `;
 const Home = () => {
   const playStoreLink = "https://play.google.com/store/apps/details?id=com.righttouchpartner.app&pcampaignid=web_share";
+  const userAppWebUrl = "https://play.google.com/store/apps/details?id=com.righttouch.customer&pcampaignid=web_share";
+
+  const handleUserAppLaunch = (event) => {
+    const isAndroid = /Android/i.test(navigator.userAgent);
+
+    if (!isAndroid) {
+      return;
+    }
+
+    event.preventDefault();
+    const intentUrl = `intent://details?id=com.righttouch.customer#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=${encodeURIComponent(userAppWebUrl)};end`;
+    window.location.href = intentUrl;
+  };
+
   useScrollReveal();
 
   return (
@@ -65,6 +79,21 @@ const Home = () => {
         <Link to={playStoreLink} target="_blank" rel="noopener noreferrer" className="btn btn-success btn-lg px-5 py-3 fw-bold shadow-lg rounded-pill">
           Register as a Technician Now
         </Link>
+      </div>
+
+      <div className="user-launch-card text-center mt-3 mb-5 scroll-reveal reveal-up reveal-delay-2">
+        <p className="launch-tag mb-2">For Customers</p>
+        <h2 className="launch-title mb-3">Launch to Explore User App</h2>
+        <p className="launch-subtitle mb-4">Book trusted services, track requests, and connect with verified professionals in a tap.</p>
+        <a
+          href={userAppWebUrl}
+          target="_blank"
+          rel="noopener noreferrer"
+          onClick={handleUserAppLaunch}
+          className="launch-explore-btn"
+        >
+          Launch User App
+        </a>
       </div>
     </div>
   );

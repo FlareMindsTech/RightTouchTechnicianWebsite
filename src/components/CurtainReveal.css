@@ -1,0 +1,67 @@
+.curtain-container {
+  position: fixed;
+  inset: 0;
+  z-index: 2200;
+  background: #000;
+  cursor: pointer;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.curtain-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
+
+.curtain-hint {
+  position: absolute;
+  top: 80%;
+  color: #c7a400;
+  font-size: 1.2rem;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  z-index: 2;
+  font-family: 'Times New Roman', serif;
+  opacity: 0.6;
+  animation: hintPulse 2s infinite ease-in-out;
+}
+
+@keyframes hintPulse {
+  0% { transform: scale(1); opacity: 0.4; text-shadow: 0 0 0 rgba(199, 164, 0, 0); }
+  50% { transform: scale(1.05); opacity: 1; text-shadow: 0 0 15px rgba(199, 164, 0, 0.5); }
+  100% { transform: scale(1); opacity: 0.4; text-shadow: 0 0 0 rgba(199, 164, 0, 0); }
+}
+
+.vignette {
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(circle, transparent 20%, rgba(0,0,0,0.8) 100%);
+  pointer-events: none;
+  z-index: 1;
+}
+
+.curtain-floor {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 5vh;
+  background: #6a040f; /* Match curtain color instead of black */
+  pointer-events: none;
+}
+
+.curtain-spotlight {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 10%, rgba(199, 164, 0, 0.1) 0%, transparent 50%);
+  pointer-events: none;
+}

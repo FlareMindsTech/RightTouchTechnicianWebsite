@@ -3,22 +3,18 @@ import { Link } from "react-router-dom";
 const Footer = () => {
   // Get the current year
   const currentYear = new Date().getFullYear();
+  const userAppWebUrl = "https://play.google.com/store/apps/details?id=com.righttouch.customer&pcampaignid=web_share";
 
-  const handleUserAppClick = (event) => {
-    event.preventDefault();
+  const handleUserAppLaunch = (event) => {
+    const isAndroid = /Android/i.test(navigator.userAgent);
 
-    if (window.toastr) {
-      window.toastr.options = {
-        closeButton: true,
-        progressBar: true,
-        timeOut: 4000,
-        extendedTimeOut: 0,
-        positionClass: "toast-top-center",
-      };
-      window.toastr.info("⚠ User App will launch soon");
-    } else {
-      window.alert("⚠ User App will launch soon");
+    if (!isAndroid) {
+      return;
     }
+
+    event.preventDefault();
+    const intentUrl = `intent://details?id=com.righttouch.customer#Intent;scheme=market;package=com.android.vending;S.browser_fallback_url=${encodeURIComponent(userAppWebUrl)};end`;
+    window.location.href = intentUrl;
   };
 
   return (
@@ -35,8 +31,18 @@ const Footer = () => {
           {/* Column 2: Roles */}
           <div className="col-md-2 col-lg-2 col-xl-2 mx-auto mt-3">
             <h5 className="text-uppercase home-accent-text mb-4 font-weight-bold">Join Us</h5>
-            <p><Link target="_blank" to="https://play.google.com/store/apps/details?id=com.righttouchpartner.app&pcampaignid=web_share" className="text-success fw-bold text-decoration-underline">Technician App</Link></p>
-            <p><Link to="#" onClick={handleUserAppClick} className="text-success fw-bold text-decoration-underline">User App</Link></p>
+            <p><a target="_blank" rel="noopener noreferrer" href="https://play.google.com/store/apps/details?id=com.righttouchpartner.app&pcampaignid=web_share" className="text-success fw-bold text-decoration-underline">Technician App</a></p>
+            <p>
+              <a
+                href={userAppWebUrl}
+                target="_blank"
+                rel="noopener noreferrer"
+                onClick={handleUserAppLaunch}
+                className="text-success fw-bold text-decoration-underline"
+              >
+                User App
+              </a>
+            </p>
           </div>
 
           {/* Column 3: Contact */}

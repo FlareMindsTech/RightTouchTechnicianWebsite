@@ -266,12 +266,14 @@ const CurtainReveal = ({ onCurtainOpened }) => {
   }, [onCurtainOpened]);
 
   return (
-    <div className="curtain-container">
-      <div className="vignette"></div>
-      <canvas ref={canvasRef} className="curtain-canvas"></canvas>
+    <div>
+  <div className="vignette"></div>
+      {/* <canvas ref={canvasRef} className="curtain-canvas"></canvas> */}
       <div className="curtain-floor"></div>
       <div className="curtain-spotlight"></div>
     </div>
+    
+     
   );
 };
 

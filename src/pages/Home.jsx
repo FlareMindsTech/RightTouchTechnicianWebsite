@@ -92,7 +92,7 @@ const Home = () => {
           onClick={handleUserAppLaunch}
           className="launch-explore-btn"
         >
-          Launch User App
+          Click to Explore User App
         </a>
       </div>
     </div>

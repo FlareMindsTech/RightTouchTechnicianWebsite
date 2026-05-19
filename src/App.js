@@ -27,9 +27,9 @@ function App() {
     setShowIntro(false);
   };
 
-  if (showCurtains) {
-    return <CurtainReveal onCurtainOpened={handleCurtainOpen} />;
-  }
+  // if (showCurtains) {
+  //   return <CurtainReveal onCurtainOpened={handleCurtainOpen} />;
+  // }
 
   if (showIntro) {
     return <IntroScreen onComplete={handleIntroComplete} />;
